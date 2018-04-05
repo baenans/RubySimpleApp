@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - 2.4.1
+cache: bundler
+dist: trusty
+install:
+  - bundle install
+script:
+  - bundle exec rails test
