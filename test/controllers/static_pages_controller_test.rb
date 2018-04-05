@@ -10,8 +10,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "stub watir test" do
     browser = Watir::Browser.new
     browser.goto static_pages_home_url
-    # browser.text_field(name: "first").set "Jarmo"
-    # browser.text_field(name: "last").set  "Pertman"
   end
 
   test "should get home" do
