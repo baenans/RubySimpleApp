@@ -1,5 +1,7 @@
 # RubySimpleApp
 [![Build Status](https://travis-ci.org/baenans/RubySimpleApp.svg?branch=master)](https://travis-ci.org/baenans/RubySimpleApp)
+
+
 This is the sample application for
 [*Ruby on Rails Tutorial:
 Learn Web Development with Rails*](http://www.railstutorial.org/)
