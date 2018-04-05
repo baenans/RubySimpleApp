@@ -106,6 +106,10 @@ GEM
       bundler (>= 1.3.0)
       railties (= 5.1.6)
       sprockets-rails (>= 2.0.0)
+    rails-controller-testing (1.0.2)
+      actionpack (~> 5.x, >= 5.0.1)
+      actionview (~> 5.x, >= 5.0.1)
+      activesupport (~> 5.x)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -160,12 +164,6 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.8)
       execjs (>= 0.3.0, < 3)
-    watir (6.10.3)
-      selenium-webdriver (~> 3.4, >= 3.4.1)
-    watir-rails (2.0.0)
-      rack
-      rails
-      watir (>= 6.0.0.beta4)
     web-console (3.5.1)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -188,6 +186,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.7)
   rails (~> 5.1.5)
+  rails-controller-testing
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
@@ -196,7 +195,6 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
-  watir-rails
   web-console (>= 3.3.0)
 
 BUNDLED WITH
