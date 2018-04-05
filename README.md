@@ -1,24 +1,35 @@
-# README
+# RubySimpleApp
+[![Build Status](https://travis-ci.org/baenans/RubySimpleApp.svg?branch=master)](https://travis-ci.org/baenans/RubySimpleApp)
+This is the sample application for
+[*Ruby on Rails Tutorial:
+Learn Web Development with Rails*](http://www.railstutorial.org/)
+by [Michael Hartl](http://www.michaelhartl.com/).
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting started
 
-Things you may want to cover:
+To get started with the app, clone the repo and then install the needed gems:
 
-* Ruby version
+```
+$ bundle install --without production
+```
 
-* System dependencies
+Next, migrate the database:
 
-* Configuration
+```
+$ rails db:migrate
+```
 
-* Database creation
+Finally, run the test suite to verify that everything is working correctly:
 
-* Database initialization
+```
+$ rails test
+```
 
-* How to run the test suite
+If the test suite passes, you'll be ready to run the app in a local server:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ rails server
+```
 
-* Deployment instructions
-
-* ...
+For more information, see the
+[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
