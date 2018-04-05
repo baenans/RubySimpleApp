@@ -12,5 +12,5 @@ addons:
 env:
   - CHROME_DRIVER_PATH=/tmp/chromedriver
 script:
-  - xvfb-run chromedriver
-  - bundle exec rails test
+  - chromedriver
+  - xvfb-run bundle exec rails test
