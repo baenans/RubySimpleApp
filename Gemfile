@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails',        '~> 5.1.5'  # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'bcrypt',       '3.1.11'
 gem 'puma',         '~> 3.7'    # Use Puma as the app server
 gem 'sass-rails',   '~> 5.0'    # SCSS for stylesheets
 gem 'uglifier',     '>= 1.3.0'  # Uglifier: compressor for JavaScript assets
