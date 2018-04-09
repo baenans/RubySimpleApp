@@ -30,6 +30,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rails-controller-testing'
   gem 'simplecov'
+  gem 'rubocop'
 end
 
 group :development do
