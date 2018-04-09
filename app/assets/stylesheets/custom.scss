@@ -57,3 +57,97 @@ footer {
     width: 120px;
   }
 }
+
+/***        FORMS          ***/
+
+.field_with_errors {
+  input[type=text].material,
+  input[type=email].material,
+  input[type=password].material {
+    border-bottom-color: red;
+  }
+}
+
+.field_with_errors + ul {
+  padding: 0px;
+  list-style: none;
+
+  li {
+    text-transform: capitalize;
+    font-size: 13px;
+    color: $secondary-text-color;
+  }
+}
+
+
+input[type=text].material,
+input[type=email].material,
+input[type=password].material {
+  margin: 16px 0px 5px 0px;
+  padding: 16px 0px 8px 0px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid $divider-color;
+  caret-color: $accent-color;
+}
+
+input[type=text]:focus.material,
+input[type=email]:focus.material,
+input[type=password]:focus.material {
+  outline: none;
+  border-bottom-color: $accent-color;
+}
+
+input[type=submit].material {
+  padding: 11px 16px;
+  margin: 0px 8px;
+  min-width: 64px;
+  line-height: 14px;
+  border: 0px;
+  border-radius: 2px;
+  font-size: 14px;
+  background-color: $accent-color;
+  color: $primary-color-text;
+  text-transform: uppercase;
+}
+
+/***        DEBUG          ***/
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  padding: 20px;
+  margin-top: 45px;
+  background-color: $primary-color-light;
+  @include box_sizing;
+}
+
+
+/***        FLASH          ***/
+
+.alert {
+  padding: 20px;
+}
+
+.alert-success {
+  background-color: #a6ea9d;
+}
+
+/***        USERS          ***/
+
+.gravatar {
+  width: 60px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+#new_user {
+  text-align: center;
+}

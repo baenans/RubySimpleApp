@@ -1,3 +1,28 @@
 <% provide(:title, 'Sign up') %>
 <h1>Sign up</h1>
-<p>This will be a signup page for new users.</p>
+
+<%= form_for(@user, url: users_new_path) do |f| %>
+
+  <%= f.label :name %> <br>
+  <%= f.text_field :name, class: 'material' %>
+  <%= render "form_errors", errors: @user.errors.messages[:name] %>
+  <br>
+
+  <%= f.label :email %> <br>
+  <%= f.email_field :email, class: 'material'%>
+  <%= render "form_errors", errors: @user.errors.messages[:email] %>
+  <br>
+
+  <%= f.label :password %> <br>
+  <%= f.password_field :password, class: 'material' %>
+  <%= render "form_errors", errors: @user.errors.messages[:password] %>
+  <br>
+
+  <%= f.label :password_confirmation %> <br>
+  <%= f.password_field :password_confirmation, class: 'material' %>
+  <%= render "form_errors", errors: @user.errors.messages[:password_confirmation] %>
+  <br>
+
+  <%= f.submit 'Create my account', class: 'material' %>
+
+<% end %>
