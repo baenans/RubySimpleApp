@@ -1,0 +1,5 @@
+<% provide(:title, "Edit user #{@user.name}") %>
+
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
