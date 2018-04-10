@@ -35,6 +35,12 @@ header {
     }
   }
 
+  a,
+  a:link,
+  a:visited {
+    color: $primary-color-text;
+  }
+
 }
 
 header,
@@ -132,12 +138,19 @@ input[type=submit].material {
 
 /***        FLASH          ***/
 
+$success-color: #a6ea9d;
+$danger-color: #d9534f;
+
 .alert {
   padding: 20px;
 }
 
 .alert-success {
-  background-color: #a6ea9d;
+  background-color: $success-color;
+}
+
+.alert-danger {
+  background-color: $danger-color;
 }
 
 /***        USERS          ***/
