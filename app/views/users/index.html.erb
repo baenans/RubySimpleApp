@@ -1,0 +1,17 @@
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<%= will_paginate %>
+<ul id="users-index">
+<% @users.each do |user| %>
+  <li>
+    <%= gravatar_for user, size:50 %>
+    <%= link_to user.name, user %>
+    <span class="actions">
+      <%= link_to "DELETE", user, method: :delete, data: { confirm: "Are you sure that you want to delete the user #{user.name}?" } %>
+    </span>
+  </li>
+<% end %>
+</ul>
+
+<%= will_paginate %>

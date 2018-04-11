@@ -3,9 +3,9 @@
 michael:
   name: Dumm-me And Michael
   email: michael@example.com
-  password_digest: <%= User.digest('th3S!ro_gP4$$') %>
+  password_digest: <%= User.digest('password') %>
 
 archer:
   name: Sterling Archer
   email: duchess@example.gov
-  password_digest: <%= User.digest('D!3$!9o_gP4$$') %>
+  password_digest: <%= User.digest('password') %>
