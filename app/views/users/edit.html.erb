@@ -1,0 +1,14 @@
+<% provide(:title, "Edit user #{@user.name}") %>
+<% provide(:button_text, 'Save changes') %>
+<h1>Settings</h1>
+
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+
+<%= render 'form' %>
+
+<div class="gravatar_edit">
+  <%= gravatar_for @user %>
+  <a href="http://gravatar.com/emails" target="_blank">change</a>
+</div>
