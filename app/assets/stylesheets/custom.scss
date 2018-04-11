@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
-$primary-color-dark:   #512DA8;
-$primary-color:        #673AB7;
-$primary-color-light:  #D1C4E9;
+// $primary-color-dark:   #512DA8;
+// $primary-color:        #673AB7;
+// $primary-color-light:  #D1C4E9;
+// $primary-color-text:   #FFFFFF;
+// $accent-color:         #8BC34A;
+// $primary-text-color:   #212121;
+// $secondary-text-color: #757575;
+// $divider-color:        #BDBDBD;
+
+$primary-color-dark:   #5D4037;
+$primary-color:        #795548;
+$primary-color-light:  #D7CCC8;
 $primary-color-text:   #FFFFFF;
-$accent-color:         #8BC34A;
+$accent-color:         #FFC107;
 $primary-text-color:   #212121;
 $secondary-text-color: #757575;
 $divider-color:        #BDBDBD;
@@ -167,5 +176,33 @@ ul#users-index {
   li {
     padding: 10px 0px;
     border-bottom: 1px solid $divider-color;
+  }
+}
+
+/***        USERS          ***/
+
+.pagination {
+  text-align: center;
+
+  span,
+  em.current,
+  a {
+    min-width: 20px;
+    height: 20px;
+    padding: 7px;
+    display: inline-block;
+    background-color: $accent-color;
+    color: $primary-color-text;
+    text-decoration: none;
+  }
+
+  em.current {
+    font-style: normal;
+    font-weight: bold;
+    background-color: $primary-color-light;
+  }
+
+  span {
+    display: none;
   }
 }
