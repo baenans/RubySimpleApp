@@ -15,7 +15,7 @@ class UsersController < ApplicationController
 
     if @user.save
       log_in @user
-      flash[:success] = "Hi #{@user.name}, welcome to the Sample App!"
+      flash.now[:success] = "Hi #{@user.name}, welcome to the Sample App!"
       redirect_to @user
     else
       render 'new'
@@ -29,7 +29,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(user_params)
-      flash[:success] = 'Profile updated'
+      flash.now[:success] = 'Profile updated'
       redirect_to @user
     else
       render 'edit'
@@ -49,7 +49,7 @@ class UsersController < ApplicationController
 
   def logged_in_user
     unless logged_in?
-      flash[:danger] = 'Please, log in!'
+      flash.now[:danger] = 'Please, log in!'
       redirect_to login_url
     end
   end
