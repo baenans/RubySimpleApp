@@ -25,7 +25,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     post login_path, params: {
       session: {
         email: @user.email,
-        password: 'th3S!ro_gP4$$'
+        password: 'password'
       }
     }
     assert_redirected_to @user
@@ -38,7 +38,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     post login_path, params: {
       session: {
         email: @user.email,
-        password: 'th3S!ro_gP4$$'
+        password: 'password'
       }
     }
     assert logged_in?
