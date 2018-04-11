@@ -27,6 +27,8 @@ class User < ApplicationRecord
 
   has_secure_password
 
+  # Generates a password digest using BCrypt
+  # check impl: https://goo.gl/BeCygN
   def self.digest(string)
     cost =
       if ActiveModel::SecurePassword.min_cost
