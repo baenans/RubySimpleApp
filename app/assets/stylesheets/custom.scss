@@ -38,9 +38,11 @@ header {
     padding: 0px;
 
     li {
+      margin-right: 5px;
       display: inline-block;
       padding: 16px;
       background-color: $accent-color;
+      border-radius: 3px;
     }
   }
 
@@ -176,6 +178,11 @@ ul#users-index {
   li {
     padding: 10px 0px;
     border-bottom: 1px solid $divider-color;
+  }
+
+  .actions {
+    float: right;
+    line-height: 60px
   }
 }
 
