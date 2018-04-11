@@ -17,4 +17,21 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_select 'div.field_with_errors'
     assert_select 'ul.errors_list'
   end
+
+  test 'valid signup information' do
+    get new_user_path
+    assert_difference 'User.count', 1 do
+      post users_path, params: {
+        user: {
+          name: 'Example User',
+          email: 'user@example.com',
+          password: 'Th3B3s$!-9A$$',
+          password_confirmation: 'Th3B3s$!-9A$$'
+        }
+      }
+    end
+
+    follow_redirect!
+    assert_template 'users/show'
+  end
 end
