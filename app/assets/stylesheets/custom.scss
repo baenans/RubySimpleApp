@@ -160,3 +160,12 @@ $danger-color: #d9534f;
   border-radius: 50%;
   vertical-align: middle;
 }
+
+ul#users-index {
+  list-style: none;
+
+  li {
+    padding: 10px 0px;
+    border-bottom: 1px solid $divider-color;
+  }
+}
